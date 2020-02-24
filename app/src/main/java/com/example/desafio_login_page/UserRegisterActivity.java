@@ -11,7 +11,7 @@ import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-public class UserRegisterActivity extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemClickListener {
+public class UserRegisterActivity extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemSelectedListener {
 
     private Button regist;
     private EditText name, email, pass, passConf;
@@ -32,7 +32,7 @@ public class UserRegisterActivity extends AppCompatActivity implements View.OnCl
         passConf = findViewById(R.id.conPass);
 
         spinAge = findViewById(R.id.spinAge);
-        spinAge.setOnItemClickListener(this);
+        spinAge.setOnItemSelectedListener(this);
 
         male = findViewById(R.id.radM);
         fem = findViewById(R.id.radF);
@@ -50,7 +50,12 @@ public class UserRegisterActivity extends AppCompatActivity implements View.OnCl
     }
 
     @Override
-    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
 
     }
 }
