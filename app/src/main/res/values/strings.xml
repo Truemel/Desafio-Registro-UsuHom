@@ -3,4 +3,18 @@
     <string name="nombre">Nombre</string>
     <string name="password">Password</string>
     <string name="ingresar">INGRESAR</string>
+    <string name="conPass">Confirmar Password</string>
+    <string name="email">Email</string>
+    <string name="ageProm">Edad</string>
+    <string name="hombre">masculino</string>
+    <string name="hembra">femenino</string>
+    <string name="regist">Registrar</string>
+    <string name="registrese">REGÍSTRESE</string>
+
+    <string-array name="spinAge">
+        <item>16</item>
+        <item>25</item>
+        <item>32</item>
+        <item>40</item>
+    </string-array>
 </resources>

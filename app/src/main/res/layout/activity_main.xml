@@ -37,15 +37,33 @@
         tools:layout_editor_absoluteX="-36dp" />
 
     <Button
+        android:id="@+id/butRegi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="80dp"
+        android:textSize="20sp"
+        android:paddingEnd="5dp"
+        android:background="@color/colorPrimary"
+        android:text="@string/registrese"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passw" />
+
+    <Button
         android:id="@+id/button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/ingresar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passw"
+        android:textSize="20sp"
+        android:paddingStart="5dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="80dp"
         android:background="@color/colorPrimary"
-        android:textColor="@color/white"/>
+        android:text="@string/ingresar"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/butRegi"
+        app:layout_constraintTop_toBottomOf="@+id/passw" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
